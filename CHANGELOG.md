@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.1 — 2026-09-03
+
+Fix: Play Store install was a blank cream screen.
+Android WebView would not run Vite `type="module"` from `file://`.
+The game is now one inlined HTML file (versionCode 2).
+
 ## 1.0.0 — 2026-09-03
 
 First Play Store release.
@@ -10,5 +16,3 @@ First Play Store release.
 - Candy-gloss art pass
 - Top HUD so buttons do not cover the room
 - Undo, stars, local save
-- Offline Android App Bundle targeting API 36
-- Store listing, privacy policy, data safety, and marketing kit in `play-store/`
