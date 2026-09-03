@@ -1,0 +1,37 @@
+name: Publish v1.0.0 GitHub Release
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "play-store/RELEASE_NOTES.md"
+      - ".github/workflows/release.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create GitHub Release v1.0.0
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          if gh release view v1.0.0 >/dev/null 2>&1; then
+            echo "Release v1.0.0 already exists"
+            exit 0
+          fi
+          mkdir -p /tmp/pack/LITTLE_NO_PLAY_STORE_v1.0.0
+          cp -a play-store/. /tmp/pack/LITTLE_NO_PLAY_STORE_v1.0.0/play-store/
+          cp -a legal /tmp/pack/LITTLE_NO_PLAY_STORE_v1.0.0/legal
+          cp CHANGELOG.md VERSION LICENSE README.md /tmp/pack/LITTLE_NO_PLAY_STORE_v1.0.0/
+          (cd /tmp/pack && zip -r /tmp/LITTLE_NO_PlayStore_Listing_v1.0.0.zip LITTLE_NO_PLAY_STORE_v1.0.0)
+          gh release create v1.0.0 \
+            /tmp/LITTLE_NO_PlayStore_Listing_v1.0.0.zip \
+            --title "LITTLE NO v1.0.0" \
+            --notes-file play-store/RELEASE_NOTES.md \
+            --latest

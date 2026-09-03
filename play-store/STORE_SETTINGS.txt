@@ -1,0 +1,41 @@
+LITTLE NO — Play Console store settings (v1.0.0)
+================================================
+
+App identity
+- App name: LITTLE NO
+- Package name / application ID: game.littleno.app
+- Default language: English (United States)
+- App or game: Game
+- Category: Puzzle
+- Tags: puzzle, physics, casual, cute
+
+Release
+- Version name: 1.0.0
+- Version code: 1
+- Target API: 36 (Android 16)
+- Min API: 24 (Android 7.0)
+- Orientation: portrait
+- Enroll in Play App Signing: YES (required)
+
+Countries / pricing
+- Free
+- No ads. No in-app products. Play Billing: not used
+
+Device categories
+- Phone: YES
+- Tablet: YES
+- Chrome OS: YES (portrait window)
+- Android TV / Wear / Auto / XR: NO
+
+Content declarations
+- Privacy policy URL: required
+- Ads: no
+- App access: all features available without login
+- Content ratings: Everyone / IARC 3+
+- Target audience: 12+
+- News / COVID / financial / government / health: no
+- Families: do not opt in for v1
+
+Reviewer notes
+Single-player candy physics puzzle. Offline. No account, no ads, no IAP.
+The word “No” is the dumpling’s only line.
