@@ -1,6 +1,6 @@
 # LITTLE NO
 
-**v1.0.0** — [Play Store pack](play-store/README.md) · [Release notes](play-store/RELEASE_NOTES.md)
+**v1.0.1** — [Play Store pack](play-store/README.md) · [1.0.1 notes](play-store/RELEASE_NOTES_1.0.1.md)
 
 A dumpling walks forward forever. You never steer it. Look at the room. Change one thing.
 
@@ -15,29 +15,20 @@ npm run dev
 
 Open the local URL, tap **Play**. Progress is saved in the browser.
 
-## v1.0.0 release
+## Current store build
 
 | | |
 |---|---|
-| Version | 1.0.0 (versionCode 1) |
+| Version | **1.0.1** (versionCode 2) |
 | Application ID | `game.littleno.app` |
 | Category | Game → Puzzle |
 | Price | Free. No ads. No IAP. |
-| Target API | 36 |
 
-Store listing copy, data safety, content rating, privacy policy, and the upload checklist live in [`play-store/`](play-store/).
+1.0.0 was a blank cream screen on phones (WebView blocked the game script). 1.0.1 inlines the game so it actually runs. Upload a **new** internal test release — do not reuse 1.0.0.
 
-Privacy policy (host on HTTPS for Play Console): [`legal/PRIVACY_POLICY.html`](legal/PRIVACY_POLICY.html)
+Store listing copy lives in [`play-store/`](play-store/). Privacy policy: [`legal/PRIVACY_POLICY.html`](legal/PRIVACY_POLICY.html).
 
-The signed Android App Bundle, icons, screenshots, trailer, and **upload keystore** are kept out of this public repo. Use the Play Store zip you already have for those, and never commit the keystore.
-
-## What’s in v1
-
-- 100 unique rooms (kitchen, winter lodge, jungle lodge, summer lodge)
-- Undo, restart, pause, stars
-- Squishmallow dumpling, pink bow, swirl lollipop
-- Candy-gloss rooms
-- Mobile portrait layout
+The signed `.aab` and **upload keystore** stay out of this public repo.
 
 ## Controls
 
