@@ -1,0 +1,76 @@
+LITTLE NO — Google Play listing copy (v1.0.0)
+=============================================
+Paste these fields into Play Console. Counts are inside Google's 2026 limits.
+
+
+APP NAME / TITLE (max 30 characters)
+LITTLE NO
+Count: 9
+
+
+SHORT DESCRIPTION (max 80 characters)
+It said no. Rewrite the candy world around a stubborn dumpling.
+Count: 63
+
+
+FULL DESCRIPTION (max 4000 characters)
+A dumpling named No walks forward forever. Toward cake. Toward peppermint fans. Toward a door marked OUT. You never steer it. You only rewrite the room.
+
+Tap a board across a hole. Shut a lid. Freeze the jelly. Switch a fan. Undo if the universe disagrees.
+
+LITTLE NO is a one-thumb portrait puzzle. Look at the problem. Change one thing. Watch the dumpling walk.
+
+WHAT YOU DO
+• You never grab the dumpling
+• You tap fans, boards, lids, magnets, and belts
+• You save it — or you watch the slapstick
+• You try the next room because it said no
+
+WHAT’S INSIDE
+• 100 hand-built rooms
+• Kitchen, Winter Lodge, Jungle Lodge, and Summer Lodge
+• Candy-gloss worlds: cookie platforms, peppermint fans, macaron lids
+• A squishmallow dumpling with a pink bow and a swirl lollipop
+• Instant restart. Generous undo. No lives. No energy gates
+• Stars for clean saves, not for paying
+
+Made for short sessions. Designed so a fail looks as good as a win.
+
+It does not listen. That is the entire game.
+
+
+PROMO TEXT (max 80)
+100 candy rooms. One dumpling. It still will not listen.
+
+
+WHAT’S NEW — v1.0.0 (max 500)
+First release.
+• 100 unique rooms
+• Winter, jungle, and summer lodges
+• Squishmallow dumpling with a pink bow and lollipop
+• Candy-gloss kitchens, cookie boards, peppermint fans
+• Undo, stars, and local save
+• One-thumb portrait play
+
+
+CATEGORY
+Application type: Game
+Category: Puzzle
+Tags: puzzle, physics, casual, cute, one-thumb, candy
+
+
+DEFAULT LANGUAGE
+English (United States)
+
+
+CONTACTS
+Email: hello@littleno.game
+  (replace with your publisher email before review)
+Website: https://github.com/kimmoliimat-png/little-no
+Privacy policy: host legal/PRIVACY_POLICY.html on HTTPS and paste that URL
+  Suggested: enable GitHub Pages on the repo, then
+  https://kimmoliimat-png.github.io/little-no/legal/PRIVACY_POLICY.html
+
+
+PRICING
+Free. No ads in this build. No in-app purchases in this build.

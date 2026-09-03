@@ -1,0 +1,16 @@
+LITTLE NO — IARC / content rating questionnaire (v1.0.0)
+========================================================
+Play Console → Policy → App content → Content ratings.
+
+Product type: Game
+
+Violence: NO (candy slapstick fail states only)
+Sexuality: NO
+Language: NO (the dumpling says “NO”)
+Controlled substances: NO
+User interaction / chat / UGC: NO
+Digital purchases: NO
+Unrestricted internet: NO
+Horror / hate / crime / gambling: NO
+
+Expected rating: Everyone / PEGI 3 / IARC 3+

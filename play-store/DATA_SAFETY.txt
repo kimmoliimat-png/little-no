@@ -1,0 +1,35 @@
+LITTLE NO — Play Console Data safety answers (v1.0.0)
+=====================================================
+
+Does this app collect or share any of the required user data types?
+NO
+
+Data collected: none
+Data shared: none
+
+Security practices
+- Data is encrypted in transit: Not applicable (no backend, no network permission)
+- Users can request that data be deleted: Not applicable (nothing uploaded)
+- Independent security review: NO
+- Committed to following the Play Families Policy: YES if you keep ads and IAP off
+
+On-device only
+Progress, stars, and mute are stored on the device (Android WebView localStorage).
+Uninstalling the app or clearing storage deletes it.
+We cannot read that data.
+
+Third-party SDKs in this package
+None. No ads, no analytics, no crash reporter, no login, no Google Play Games.
+
+APP ACCESS
+All features work without an account. No login.
+
+ADS
+This build: no.
+
+IN-APP PRODUCTS
+This build: none.
+
+PERMISSIONS
+None declared.
+The game is bundled inside the app and runs offline.
