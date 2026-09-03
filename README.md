@@ -1,6 +1,6 @@
 # LITTLE NO
 
-**v1.0.1** — [Play Store pack](play-store/README.md) · [1.0.1 notes](play-store/RELEASE_NOTES_1.0.1.md)
+**v1.0.2** — [Play Store pack](play-store/README.md) · [1.0.2 notes](play-store/RELEASE_NOTES_1.0.2.md)
 
 A dumpling walks forward forever. You never steer it. Look at the room. Change one thing.
 
@@ -19,12 +19,12 @@ Open the local URL, tap **Play**. Progress is saved in the browser.
 
 | | |
 |---|---|
-| Version | **1.0.1** (versionCode 2) |
+| Version | **1.0.2** (versionCode 3) |
 | Application ID | `game.littleno.app` |
 | Category | Game → Puzzle |
 | Price | Free. No ads. No IAP. |
 
-1.0.0 was a blank cream screen on phones (WebView blocked the game script). 1.0.1 inlines the game so it actually runs. Upload a **new** internal test release — do not reuse 1.0.0.
+1.0.0 and 1.0.1 opened as a blank cream screen on phones. 1.0.2 inlines the game **after** `#root` exists. Upload a **new** internal test release — Play must show **3 (1.0.2)**.
 
 Store listing copy lives in [`play-store/`](play-store/). Privacy policy: [`legal/PRIVACY_POLICY.html`](legal/PRIVACY_POLICY.html).
 
