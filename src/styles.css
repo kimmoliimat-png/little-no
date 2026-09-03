@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #fff3eb;
+  --color-cream-2: #ffe6f2;
+  --color-paper: #fff8f4;
+  --color-ink: #4a2040;
+  --color-rust: #ff5c8a;
+  --color-dough: #f7d2b0;
+  --color-candy: #ff7eb6;
+  --color-mint: #7ad9c0;
+  --color-lemon: #ffe07a;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Nunito Sans", ui-sans-serif, system-ui, sans-serif;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.25rem;
+  --max-width-phone: 26.875rem;
+}
+
+@layer base {
+  html,
+  body,
+  #app {
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+  }
+  body {
+    font-family: var(--font-sans);
+    background: var(--color-ink);
+    color: var(--color-cream);
+    overscroll-behavior: none;
+    user-select: none;
+    overflow: hidden;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+    touch-action: manipulation;
+  }
+}
