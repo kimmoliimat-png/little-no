@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.2 — 2026-09-03
+
+Fix: 1.0.1 was still a blank screen.
+The game script ran in `<head>` before `#root` existed (`missing #root`).
+Script now runs at the end of `<body>`. Loads `file:///android_asset/www/index.html`.
+versionCode 3.
+
 ## 1.0.1 — 2026-09-03
 
 Fix: Play Store install was a blank cream screen.
