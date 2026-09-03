@@ -12,3 +12,10 @@ screenshots
 artifacts
 .grok
 .node_modules.lock
+
+# Android / Play signing — never commit
+*.jks
+*.keystore
+android/local.properties
+android/app/build/
+android/.gradle/
