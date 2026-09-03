@@ -1,0 +1,31 @@
+name: Publish v1.0.2 GitHub Release
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "play-store/RELEASE_NOTES_1.0.2.md"
+      - ".github/workflows/release-1.0.2.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create GitHub Release v1.0.2
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          if gh release view v1.0.2 >/dev/null 2>&1; then
+            echo "Release v1.0.2 already exists"
+            exit 0
+          fi
+          gh release create v1.0.2 \
+            --title "LITTLE NO v1.0.2" \
+            --notes-file play-store/RELEASE_NOTES_1.0.2.md \
+            --latest
