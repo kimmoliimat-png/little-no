@@ -10,9 +10,6 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
-import java.nio.charset.StandardCharsets;
 
 public class MainActivity extends Activity {
     private WebView webView;
@@ -48,35 +45,10 @@ public class MainActivity extends Activity {
         s.setBuiltInZoomControls(false);
         s.setDisplayZoomControls(false);
         s.setCacheMode(WebSettings.LOAD_NO_CACHE);
-        s.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
 
         webView.setWebViewClient(new WebViewClient());
         webView.setWebChromeClient(new WebChromeClient());
-
-        // Inlined HTML + dummy https origin. file:// + type=module is a blank screen.
-        String html = readAsset("www/index.html");
-        webView.loadDataWithBaseURL(
-                "https://app.littleno.local/",
-                html,
-                "text/html",
-                "UTF-8",
-                null);
-    }
-
-    private String readAsset(String path) {
-        try (InputStream in = getAssets().open(path);
-                ByteArrayOutputStream out = new ByteArrayOutputStream()) {
-            byte[] buf = new byte[8192];
-            int n;
-            while ((n = in.read(buf)) != -1) {
-                out.write(buf, 0, n);
-            }
-            return new String(out.toByteArray(), StandardCharsets.UTF_8);
-        } catch (Exception e) {
-            return "<!doctype html><html><body style='background:#FFF3EB;"
-                    + "font-family:sans-serif;padding:32px;color:#5B2A4A'>"
-                    + "<h1>LITTLE NO</h1><p>Could not load the room.</p></body></html>";
-        }
+        webView.loadUrl("file:///android_asset/www/index.html");
     }
 
     @Override
